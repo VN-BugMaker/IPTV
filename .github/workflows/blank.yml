@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get cpu 
+        run: lscpu
